@@ -1,10 +1,10 @@
 package com.example.servicesvk
 
-import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.servicesvk.dto.Items
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -22,7 +22,6 @@ class MainViewModel @Inject constructor(
             object: GetServicesCallback<Items> {
                 override fun onSuccess(services: Items) {
                     _servicesData.value = services
-                    Log.d("ServicesData", _servicesData.value.items[0].description)
                 }
 
                 override fun onError(error: String?) {}
@@ -30,4 +29,5 @@ class MainViewModel @Inject constructor(
             }
         )
     }
+
 }

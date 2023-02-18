@@ -1,9 +1,7 @@
 package com.example.servicesvk.data
 
-import com.example.servicesvk.Items
-import com.example.servicesvk.Service
+import com.example.servicesvk.dto.Items
 import retrofit2.Call
-import retrofit2.Response
 import retrofit2.http.GET
 
 interface ApiService {

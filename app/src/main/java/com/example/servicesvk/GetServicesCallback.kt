@@ -1,5 +1,7 @@
 package com.example.servicesvk
 
+import com.example.servicesvk.dto.Items
+
 interface GetServicesCallback<T> {
     fun onSuccess(
         services: Items

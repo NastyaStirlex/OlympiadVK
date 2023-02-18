@@ -1,6 +1,7 @@
 package com.example.servicesvk
 
 import com.example.servicesvk.data.ApiService
+import com.example.servicesvk.dto.Items
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

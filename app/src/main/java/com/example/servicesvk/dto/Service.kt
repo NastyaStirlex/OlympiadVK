@@ -1,4 +1,4 @@
-package com.example.servicesvk
+package com.example.servicesvk.dto
 
 data class Service(
     val description: String,
